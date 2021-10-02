@@ -10,13 +10,11 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         var btnStartStoryMode = GameObject.Find("BtnStartStory").GetComponent<Button>();
-        Debug.Log(btnStartStoryMode);
         btnStartStoryMode.onClick.AddListener(StartStoryMode);
     }
 
     void StartStoryMode()
     {
-        Debug.Log("starting story mode");
         SceneManager.LoadScene("level_01");
     }
 }
