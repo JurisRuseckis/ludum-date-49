@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GroundTiles_12
+  m_Name: Cobblestone
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 7714861430389134398, guid: 54e66e72e6aa2f2498793a65c953d357, type: 3}
+  m_Sprite: {fileID: 8371019140385695755, guid: 54e66e72e6aa2f2498793a65c953d357, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
