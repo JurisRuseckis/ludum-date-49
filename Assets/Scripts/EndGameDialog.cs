@@ -11,8 +11,21 @@ public class EndGameDialog : MonoBehaviour
     {
         var btnBackToMenu = GameObject.Find("BtnMenu").GetComponent<Button>();
         btnBackToMenu.onClick.AddListener(BackToMenu);
+
+        var nextLevelBtn = GameObject.Find("BtnNext").GetComponent<Button>();
+        nextLevelBtn.onClick.AddListener(NextLevel);
     }
-    void BackToMenu(){
+    void BackToMenu()
+    {
         SceneManager.LoadScene("main_menu");
+    }
+
+    void NextLevel()
+    {
+        if(string.IsNullOrEmpty(nextLevel)){
+            return;
+        }
+
+        SceneManager.LoadScene(nextLevel);
     }
 }
